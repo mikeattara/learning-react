@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
 export default class ChangeColorButton extends Component {
+  handleClick() {
+    console.log('Clicked!');
+  }
+
   render() {
-    return (
-      <button>Change the color</button>
-    );
+    return <button onClick={this.handleClick}>Change the color</button>;
     }
 }
